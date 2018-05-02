@@ -29,12 +29,11 @@ connection.query('SELECT * FROM products', function(err, results){
           name: 'ItemID',
           message: "What is the ID of the product you would like to buy?"
 
-        }]).
+        }])
         
-        then(function(answer){
+    .then(function(answer){
           
-          
-        var ItemID = parseInt(answer.item_id)
+          var ItemID = parseInt(answer.item_id)
 
 
           for (var i = 0; i < results.length; i++) {
